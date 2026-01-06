@@ -1,0 +1,134 @@
+/* ==================== GLOBAL CSS VARIABLES ==================== */
+
+:root {
+  /* ===== COLORS ===== */
+  --black: #000000;
+  --white: #ffffff;
+  --gray-100: #f5f5f5;
+  --gray-200: #e5e5e5;
+  --gray-300: #abb8c3;
+  --gray-500: #666666;
+  --gray-700: #3b3b3b;
+  --gray-800: #313131;
+
+  /* Brand Colors */
+  --primary: #f7c51e;
+  --primary-hover: #e0b21a;
+  --primary-light: rgba(247, 197, 30, 0.15);
+
+  /* Accent Colors */
+  --red: #cf2e2e;
+  --orange: #ff6900;
+  --amber: #fcb900;
+  --green: #00d084;
+  --green-light: #7bdcb5;
+  --cyan: #8ed1fc;
+  --blue: #0693e3;
+  --purple: #9b51e0;
+  --pink: #f78da7;
+
+  /* Semantic Colors */
+  --success: #81b29a;
+  --warning: #e07a5f;
+  --error: #dc3545;
+
+  /* ===== GRADIENTS ===== */
+  --gradient-primary: linear-gradient(135deg, #f7c51e 0%, #e0b21a 100%);
+  --gradient-dark: linear-gradient(135deg, #313131 0%, #3b3b3b 100%);
+  --gradient-cyan-purple: linear-gradient(135deg, #0693e3 0%, #9b51e0 100%);
+  --gradient-green: linear-gradient(135deg, #7bdcb5 0%, #00d084 100%);
+  --gradient-amber-orange: linear-gradient(135deg, #fcb900 0%, #ff6900 100%);
+  --gradient-orange-red: linear-gradient(135deg, #ff6900 0%, #cf2e2e 100%);
+  --gradient-spectrum: linear-gradient(135deg, #4aeadc 0%, #9778d1 20%, #cf2aba 40%, #ee2c82 60%, #fb6962 80%, #fef84c 100%);
+  --gradient-dusk: linear-gradient(135deg, #ffcb70 0%, #c751c0 50%, #4158d0 100%);
+  --gradient-ocean: linear-gradient(135deg, #fff5cb 0%, #b6e3d4 50%, #33a7b5 100%);
+  --gradient-midnight: linear-gradient(135deg, #020381 0%, #2874fc 100%);
+
+  /* ===== TYPOGRAPHY ===== */
+  --font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+  --text-base: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
+  --text-md: clamp(1.125rem, 1rem + 0.6vw, 1.25rem);
+  --text-lg: clamp(1.25rem, 1.1rem + 0.75vw, 1.5rem);
+  --text-xl: clamp(1.5rem, 1.25rem + 1.25vw, 2rem);
+  --text-2xl: clamp(2rem, 1.5rem + 2.5vw, 3rem);
+  --text-3xl: clamp(2.5rem, 2rem + 2.5vw, 4rem);
+
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  --leading-tight: 1.2;
+  --leading-normal: 1.7;
+  --leading-relaxed: 1.8;
+
+  /* ===== SPACING ===== */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  --section-y: clamp(3rem, 5vw, 6rem);
+  --section-x: clamp(1rem, 3vw, 2rem);
+
+  /* ===== LAYOUT ===== */
+  --container-max: 1200px;
+  --container-padding: 1.5rem;
+
+  /* ===== BORDERS ===== */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+  --border: 1px;
+  --border-thick: 2px;
+
+  /* ===== SHADOWS ===== */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 20px 50px rgba(0, 0, 0, 0.15);
+  --shadow-glow: 0 4px 20px rgba(247, 197, 30, 0.4);
+  --shadow-natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+  --shadow-deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+  --shadow-crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+
+  /* ===== TRANSITIONS ===== */
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 350ms;
+  --ease-out: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-in: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ===== Z-INDEX ===== */
+  --z-base: 0;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-fixed: 300;
+  --z-modal: 500;
+  --z-tooltip: 600;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-normal: 0ms;
+    --duration-slow: 0ms;
+  }
+}
