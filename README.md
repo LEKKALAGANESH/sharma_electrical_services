@@ -9,7 +9,7 @@ A modern, responsive React-based website for Sharma Electrical Services, showcas
 
 ## 🚀 Live Demo
 
-[View Live Website](https://sharmaelectrical.vercel.app/)
+[View Live Website](https://sharma-electrical-services.vercel.app/)
 
 ## 📋 Table of Contents
 
@@ -154,7 +154,8 @@ git --version
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/sharma-electrical.git
+   git clone https://github.com/LEKKALAGANESH/sharma_electrical_services.git
+   
    cd sharma-electrical
    ```
 
